@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+  </head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/leaflet.css">
+    <link rel="stylesheet" href="assets/css/app.css">
+
+
+
+    <title>GMU Opioids></title>
+
+  <body>
+
+    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <div class="navbar-icon-container">
+            <a href="#" class="navbar-icon pull-right visible-xs" id="nav-btn"><i class="fa fa-bars fa-lg white"></i></a>
+            <a href="#" class="navbar-icon pull-right visible-xs" id="sidebar-toggle-btn"><i class="fa fa-search fa-lg white"></i></a>
+          </div>
+          <a class="navbar-brand" href="#">GMU Opioids</a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <form class="navbar-form navbar-right" role="search">
+            <div class="form-group has-feedback">
+                <input id="searchbox" type="text" placeholder="Search" class="form-control">
+                <span id="searchicon" class="fa fa-search form-control-feedback"></span>
+            </div>
+          </form>
+          <ul class="nav navbar-nav">
+            <li><a href="#" data-toggle="collapse" data-target=".navbar-collapse.in" id="about-btn"><i class="fa fa-question-circle white"></i>&nbsp;&nbsp;About</a></li>
+            <li class="dropdown">
+              <a id="toolsDrop" href="#" role="button" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-globe white"></i>&nbsp;&nbsp;Tools <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="#" data-toggle="collapse" data-target=".navbar-collapse.in" id="login-btn"><i class="fa fa-user"></i>&nbsp;&nbsp;Login</a></li>
+              </ul>
+            </li>
+            <li class="hidden-xs"><a href="/doctors.html" data-toggle="collapse" data-target=".navbar-collapse.in" id="list-btn"><i class="fa fa-list white"></i>&nbsp;&nbsp;Doctor List</a></li>
+          </ul>
+        </div><!--/.navbar-collapse -->
+      </div>
+    </div>
+
+    <div id="container">
+      <div id="sidebar">
+        <div class="sidebar-wrapper">
+          <div class="panel panel-default" id="features">
+            <div class="panel-heading">
+              <h3 class="panel-title">Doctors
+              <!-- <button type="button" class="btn btn-xs btn-default pull-right" id="sidebar-hide-btn"><i class="fa fa-chevron-left"></i></button></h3> -->
+            </div>
+            <div class="panel-body">
+              <div class="row">
+                <div class="col-xs-8 col-md-8">
+                  <input type="text" class="form-control search" placeholder="Filter" />
+                </div>
+                <div class="col-xs-4 col-md-4">
+                  <button type="button" class="btn btn-primary pull-right sort" data-sort="feature-name" id="sort-btn"><i class="fa fa-sort"></i>&nbsp;&nbsp;Sort</button>
+                </div>
+              </div>
+            </div>
+            <div class="sidebar-table">
+              <table class="table table-hover" id="feature-list">
+                <thead class="hidden">
+                  <tr>
+                    <th>Icon</th>
+                  <tr>
+                  <tr>
+                    <th>Name</th>
+                  <tr>
+                  <tr>
+                    <th>Chevron</th>
+                  <tr>
+                </thead>
+                <tbody class="list"></tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="map"></div>
+    </div>
+    <!-- <div id="loading">
+      <div class="loading-indicator">
+        <div class="progress progress-striped active">
+          <div class="progress-bar progress-bar-info progress-bar-full"></div>
+        </div>
+      </div>
+    </div> -->
+
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/leaflet.js"></script>
+    <script src="assets/js/app.js"></script>
+
+  </body>
+
+
+</html>
