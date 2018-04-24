@@ -7,10 +7,12 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/leaflet.css">
     <link rel="stylesheet" href="assets/css/app.css">
+    <script language="JavaScript" type="text/javascript" src="assets/js/jquery-3.1.0.min.js"></script>
 
 
 
-    <title>GMU Opioids></title>
+
+    <title>GMU Opioids</title>
 
   <body>
 
@@ -31,14 +33,8 @@
             </div>
           </form>
           <ul class="nav navbar-nav">
-            <li><a href="#" data-toggle="collapse" data-target=".navbar-collapse.in" id="about-btn"><i class="fa fa-question-circle white"></i>&nbsp;&nbsp;About</a></li>
-            <li class="dropdown">
-              <a id="toolsDrop" href="#" role="button" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-globe white"></i>&nbsp;&nbsp;Tools <b class="caret"></b></a>
-              <ul class="dropdown-menu">
-                <li><a href="#" data-toggle="collapse" data-target=".navbar-collapse.in" id="login-btn"><i class="fa fa-user"></i>&nbsp;&nbsp;Login</a></li>
-              </ul>
-            </li>
             <li class="hidden-xs"><a href="/doctors.html" data-toggle="collapse" data-target=".navbar-collapse.in" id="list-btn"><i class="fa fa-list white"></i>&nbsp;&nbsp;Doctor List</a></li>
+            <li class="hidden-xs"><a href="/anomaly.html" data-toggle="collapse" data-target=".navbar-collapse.in" id="list-btn"><i class="glyphicon glyphicon-eye-open white"></i>&nbsp;&nbsp;Fraud Detection</a></li>
           </ul>
         </div><!--/.navbar-collapse -->
       </div>
@@ -49,8 +45,9 @@
         <div class="sidebar-wrapper">
           <div class="panel panel-default" id="features">
             <div class="panel-heading">
-              <h3 class="panel-title">Doctors
-              <!-- <button type="button" class="btn btn-xs btn-default pull-right" id="sidebar-hide-btn"><i class="fa fa-chevron-left"></i></button></h3> -->
+              <h3 class="panel-title">Views
+              <button type="button" class="btn btn-primary btn-sm pull-right" id="resetView" onclick="resetMapView()">Reset View</button></h3>
+              <span class="clearfix"></span>
             </div>
             <div class="panel-body">
               <div class="row">
@@ -63,20 +60,8 @@
               </div>
             </div>
             <div class="sidebar-table">
-              <table class="table table-hover" id="feature-list">
-                <thead class="hidden">
-                  <tr>
-                    <th>Icon</th>
-                  <tr>
-                  <tr>
-                    <th>Name</th>
-                  <tr>
-                  <tr>
-                    <th>Chevron</th>
-                  <tr>
-                </thead>
-                <tbody class="list"></tbody>
-              </table>
+              <button type="button" class="btn btn-primary btn-sm pull-left" id="pittDeaths" onclick="showPittDeaths()">Pittsburgh Overdose View</button></h3>
+              <button type="button" class="btn btn-primary btn-sm pull-left" id="indictedView" onclick="showIndictedDoctors()">Indicted Doctors View</button></h3>
             </div>
           </div>
         </div>

@@ -6,8 +6,15 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 
+    <script src="assets/js/doctorQuery.js"></script>
+    <script src="assets/js/configuration.js"></script>
+    <script language="JavaScript" type="text/javascript" src="assets/js/jquery-3.1.0.min.js"></script>
 
-    <title>GMU Opioids></title>
+
+
+
+
+    <title>GMU Opioids</title>
 
   <body>
     <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
@@ -27,18 +34,20 @@
             </div>
           </form>
           <ul class="nav navbar-nav">
-            <li><a href="#" data-toggle="collapse" data-target=".navbar-collapse.in" id="about-btn"><i class="fa fa-question-circle white"></i>&nbsp;&nbsp;About</a></li>
-            <li class="dropdown">
-              <a id="toolsDrop" href="#" role="button" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-globe white"></i>&nbsp;&nbsp;Tools <b class="caret"></b></a>
-              <ul class="dropdown-menu">
-                <li><a href="#" data-toggle="collapse" data-target=".navbar-collapse.in" id="login-btn"><i class="fa fa-user"></i>&nbsp;&nbsp;Login</a></li>
-              </ul>
-            </li>
             <li class="hidden-xs"><a href="/doctors.html" data-toggle="collapse" data-target=".navbar-collapse.in" id="list-btn"><i class="fa fa-list white"></i>&nbsp;&nbsp;Doctor List</a></li>
+            <li class="hidden-xs"><a href="/anomaly.html" data-toggle="collapse" data-target=".navbar-collapse.in" id="list-btn"><i class="glyphicon glyphicon-eye-open white"></i>&nbsp;&nbsp;Fraud Detection</a></li>
           </ul>
         </div><!--/.navbar-collapse -->
       </div>
     </div>
+
+    <div class="jumbotron">
+      <input type="text" name="npi" id="npi" placeholder="Search by NPI ">
+      <input type="text" name="lastName" id="lastName" placeholder="Search by Doctors Last Name">
+      <input type ="button" class="glyphicon glyphicon-search" onclick="queryDoctor()">
+      <div id="swipht"></div>
+    </div>
+
 
   </body>
 
