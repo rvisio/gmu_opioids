@@ -187,3 +187,39 @@ input[type="radio"], input[type="checkbox"] {
   border: 1px solid #ddd; /* Add a grey border */
   margin-bottom: 12px; /* Add some space below the input */
 }
+
+.centerDiv{
+  width: 800px;
+  border-radius: 5px;
+  background: #ccc;
+  padding: 24px;
+  height: 50px;
+  position: absolute;
+  margin-top: -25px;
+  margin-left: -400px;
+  top: 50%;
+  left: 50%;
+}
+
+.center-block {
+  margin: auto;
+  display: block;
+}
+
+#doctorMap {
+  height: 180px;
+  position: absolute;
+  display: block;
+}
+#map-container{
+  height: 100%;
+}
+#container{
+  height: 100%;
+}
+
+.viewButton {
+  margin-top: 4px;
+  margin-bottom: 8px;
+  margin-left: 4px;
+}

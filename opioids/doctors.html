@@ -5,10 +5,11 @@
   </head>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/leaflet.css">
+    <link rel="stylesheet" href="assets/css/app.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/leaflet.js"></script>
 
-    <script src="assets/js/doctorQuery.js"></script>
-    <script src="assets/js/configuration.js"></script>
-    <script language="JavaScript" type="text/javascript" src="assets/js/jquery-3.1.0.min.js"></script>
+
 
 
 
@@ -40,16 +41,39 @@
         </div><!--/.navbar-collapse -->
       </div>
     </div>
+    <div class="container-fluid ">
+    </br>
+      <div class="jumbotron ">
+        <div class="input-group">
+          <input type="text"  name="npi" id="npi" placeholder="Search by NPI ">
+          &nbsp;&nbsp;
+          <button type="button" class="btn btn-info" onclick="queryDoctor()">
+        		<span class="glyphicon glyphicon-search"></span>Search
+        	</button>
+          &nbsp;&nbsp;
+          <button type="button" class="btn btn-info" onclick="viewDoctorOnMap()">
+            <span class="glyphicon glyphicon-search"></span>View Doctor on Map
+          </button>
+          &nbsp;&nbsp;
 
-    <div class="jumbotron">
-      <input type="text" name="npi" id="npi" placeholder="Search by NPI ">
-      <input type="text" name="lastName" id="lastName" placeholder="Search by Doctors Last Name">
-      <input type ="button" class="glyphicon glyphicon-search" onclick="queryDoctor()">
-      <div id="swipht"></div>
+        </div>
+        &nbsp;&nbsp;
+
+        <div id="doctorName"></div>
+        <div id="doctorState"></div>
+        <div id="address"></div>
+        <div id="specialty"></div>
+        <div id="doctorNpi"></div>
+        <div id="investigateDoctor"></div>
+
+
     </div>
-
+  </div>
 
   </body>
+
+  <script language="JavaScript" type="text/javascript" src="assets/js/jquery-3.1.0.min.js"></script>
+  <script src="assets/js/doctorQuery.js"></script>
 
 
 </html>

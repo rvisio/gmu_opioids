@@ -23,7 +23,7 @@
             <a href="#" class="navbar-icon pull-right visible-xs" id="nav-btn"><i class="fa fa-bars fa-lg white"></i></a>
             <a href="#" class="navbar-icon pull-right visible-xs" id="sidebar-toggle-btn"><i class="fa fa-search fa-lg white"></i></a>
           </div>
-          <a class="navbar-brand" href="#">GMU Opioids</a>
+          <a class="navbar-brand" href="/">GMU Opioids</a>
         </div>
         <div class="navbar-collapse collapse">
           <form class="navbar-form navbar-right" role="search">
@@ -60,21 +60,22 @@
               </div>
             </div>
             <div class="sidebar-table">
-              <button type="button" class="btn btn-primary btn-sm pull-left" id="pittDeaths" onclick="showPittDeaths()">Pittsburgh Overdose View</button></h3>
-              <button type="button" class="btn btn-primary btn-sm pull-left" id="indictedView" onclick="showIndictedDoctors()">Indicted Doctors View</button></h3>
+              <button type="button" class="btn btn-primary btn-sm pull-left viewButton" id="pittDeaths" onclick="showPittDeaths()">Pittsburgh Overdose View</button></h3>
+              &nbsp;&nbsp;
+              <button type="button" class="btn btn-primary btn-sm pull-left viewButton" id="indictedView" onclick="showIndictedDoctors()">Indicted Doctors View</button></h3>
             </div>
           </div>
         </div>
       </div>
       <div id="map"></div>
     </div>
-    <!-- <div id="loading">
+    <div id="loading">
       <div class="loading-indicator">
         <div class="progress progress-striped active">
           <div class="progress-bar progress-bar-info progress-bar-full"></div>
         </div>
       </div>
-    </div> -->
+    </div>
 
     <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/leaflet.js"></script>

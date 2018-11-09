@@ -1,0 +1,206 @@
+[
+  {
+    "doctorName":"John Couch",
+    "lat": 30.698011,
+    "lon": -88.10196,
+    "sentence": "20 years prison"
+  },
+    {
+    "doctorName": "Gavin Awerbuch",
+    "lat": 43.4929122804508,
+    "lon": -83.9737122714217,
+    "sentence": "32 months prison, ordered to pay $3.1 million in restitution"
+  },
+  {
+    "doctorName": "Steven Chun",
+    "lat": 	27.475504,
+    "lon": -82.392128,
+    "sentence": "Settled $750,000"
+  },
+  {
+    "doctorName": "Heather A Alfonso",
+    "lat":41.3339348890895,
+    "lon": -73.0862548745683,
+    "sentence": null
+  },
+  {
+    "doctorName": "Xiulu Ruan",
+    "lat": 30.698011,
+    "lon": -88.10196,
+    "sentence": "21 years prison"
+  },
+  {
+    "doctorName": "Steve Fanto",
+    "lat": 33.67842,
+    "lon": -111.806618,
+    "sentence": "Practice barred"
+  },
+  {
+    "doctorName": "Mark Murphy",
+    "lat": 34.5749824903385,
+    "lon": -87.0162139269664,
+    "sentence": "Practice suspended and raided"
+  },
+  {
+    "doctorName": "Edward Lubin",
+    "lat": 27.884847,
+    "lon": -82.7302195,
+    "sentence": "Lawsuit filed against"
+  },
+  {
+    "doctorName": "Christopher J Clough",
+    "lat": 43.2481225975661,
+    "lon": -70.9000858180254,
+    "sentence": "Charged by Department of Justice. Lawsuit filed against"
+  },
+  {
+    "doctorName": "Alexander Burducea",
+    "lat": 40.725761,
+    "lon": 	-74.172221,
+    "sentence": "Charged in fentanyl kickback scheme"
+  },
+   {
+    "doctorName": "Nicholas John Capos Jr",
+    "lat": 39.1442003013722,
+    "lon": 	-121.62089216906,
+    "sentence": "Sentenced to four years and four months in prison"
+  },
+    {
+    "doctorName": "Shannon Christopher Ceasar",
+    "lat": 30.0102132332743,
+    "lon": 	-90.1805452142894,
+    "sentence": "Sentenced to ten years in prison for running a pill mill"
+  },
+    {
+    "doctorName": "Wayne J Celestine III",
+    "lat": 42.4173431611626,
+    "lon": 	-83.3744538076587,
+    "sentence": "Office raided. $1.5 million in assets seized"
+  },
+    {
+    "doctorName": "Zongli Chang",
+    "lat": 40.725761,
+    "lon": 	-74.172221,
+    "sentence": "Charged in $18 million illegal distribution of prescription drugs and health care fraud scheme"
+  },
+    {
+    "doctorName": "Jeri Ellis",
+    "lat": 35.4073435199132,
+    "lon": -97.5484282963018,
+    "sentence": "Charged with unlawful opioid distribution"
+  },
+  {
+    "doctorName": "Gordon Freedman",
+    "lat": 33.4934586395957,
+    "lon": 	-82.0942482126689,
+    "sentence": "Charged in fentanyl kickback scheme"
+  },
+  {
+    "doctorName": "Jeffrey A. Goldstein",
+    "lat": 43.1913525478687,
+    "lon": 	-77.5844323759147,
+    "sentence": "Charged in fentanyl kickback scheme"
+  },
+    {
+    "doctorName": "Steven A Holper",
+    "lat": 36.1586129,
+    "lon": 	-115.1858561,
+    "sentence": "Charged with 29 counts of unlawful distribution of Fentanyl and health care fraud"
+  },
+    {
+    "doctorName": "Azad Khan",
+    "lat": 39.9708985350547,
+    "lon": 	-75.2288523050614,
+    "sentence": "Sentenced to two years in prison"
+  },
+    {
+    "doctorName": "David Charles Kirkwood",
+    "lat": 39.747981051331,
+    "lon": 	-84.1415931350581,
+    "sentence": "Plead guilty to health care fraud. Seven patients died from overdoses."
+  },
+      {
+    "doctorName": "Raymond Kraynak",
+    "lat": 40.7946927752271,
+    "lon": -76.4123679600567,
+    "sentence": "Charged with 19 counts related to drug overdose deaths"
+  },
+      {
+    "doctorName": "Frank D Lazzerini",
+    "lat": 40.761443,
+    "lon": -80.762546,
+    "sentence": "Indicted on 272 counts related to running pill mill"
+  },
+      {
+    "doctorName": "Andres Mencia",
+    "lat": 	26.1887209,
+    "lon": 	-80.1248373,
+    "sentence": "Arrested on federal fraud, drug and money laundering charges"
+  },
+        {
+    "doctorName": "Jeffrey Olsen",
+    "lat": 	33.6637144,
+    "lon": 	-117.8269444,
+    "sentence": "Indicted by Department of Justice"
+  },
+        {
+    "doctorName": "Jerrold Rosenberg",
+    "lat": 	41.8423191,
+    "lon": -71.4073494,
+    "sentence": "Indicted on charges of health care fraud and receiving kickbacks"
+  },
+        {
+    "doctorName": "Egisto Salerno",
+    "lat": 	32.8342082164902,
+    "lon": 	-117.082641513747,
+    "sentence": "Arrested on federal charges stemming from alleged role in a conspiracy to distribute hydrocodone as part of a pill mill"
+  },
+        {
+    "doctorName": "Todd Schlifstein",
+    "lat": 	40.7679923802598,
+    "lon": 	-73.96146533439083,
+    "sentence": "Charged in fentanyl kickback scheme"
+  },
+          {
+    "doctorName": "Dialecti Voudouris",
+    "lat": 	40.7777018919629,
+    "lon": -73.95799490379573,
+    "sentence": "Charged in fentanyl kickback scheme"
+  },
+          {
+    "doctorName": "Henri Wetselaar",
+    "lat": 	36.10451,
+    "lon": -115.067713,
+    "sentence": "Sentenced to ten years in prison for opioid pill mill"
+  },
+            {
+    "doctorName": "Martin S Tesher",
+    "lat": 	40.7696669577555,
+    "lon": 	-73.9677569863841,
+    "sentence": "Arrested for illegally prescribing millions of oxycodone pills"
+  },
+            {
+    "doctorName": "George Naum",
+    "lat":  40.0381157881153,
+    "lon": -81.5774422649955,
+    "sentence": "Indicted with conspiracy to distribute controlled substances"
+  },
+              {
+    "doctorName": "Felix Brizuela",
+    "lat":  39.636473,
+    "lon": -79.951111,
+    "sentence": "Indicted with conspiracy to distribute controlled substances"
+  },
+              {
+    "doctorName": "Joseph L Burton",
+    "lat": 	34.1150045976224,
+    "lon": 	-84.2694522323071,
+    "sentence": "Former county medical examiner, indicted for opioid distribution"
+  },
+              {
+    "doctorName": "Andrzej Zielke",
+    "lat":  40.5651543,
+    "lon": -79.9294376,
+    "sentence": "Charged with illegally prescribing painkillers, three dead from overdoses"
+  }
+]

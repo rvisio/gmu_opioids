@@ -2,10 +2,29 @@ var map = [];
 
 var mapboxAccessToken = 'pk.eyJ1IjoicnZpc2lvIiwiYSI6ImNpbGZlcWp5dzFyNGd2cm0weHNkYXFmZmkifQ._SdrpHeG4bGCe7ugGJTc2Q';
 
-
-
 var map = L.map('map').setView([37.8, -96], 4);
 
+
+var urlParams = new URLSearchParams(window.location.search);
+
+console.log(urlParams.has('lat'));
+
+if (urlParams.has('lat')){
+  displayDoctor(urlParams.get('lat'), urlParams.get('lon'));
+}
+
+console.log(urlParams);
+
+var redCrossIcon = L.icon({
+  iconUrl:'assets/red_cross.png',
+  iconSize: [38,45],
+  iconAnchor: [22,94]
+});
+
+var dojIcon = L.icon({
+  iconUrl:'assets/doj.png',
+  iconSize: [68,75]
+})
 
 L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=' + mapboxAccessToken, {
     id: 'mapbox.light',
@@ -14,8 +33,26 @@ L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token='
 function showPittDeaths(){
   pittOverdoses();
   pittDoctors();
-
 }
+
+function displayDoctor(lat,lon){
+  var doctorMarker = L.marker([lat,lon]).addTo(map);
+  var popupText = "<b>Name:</b> " + urlParams.get('doctorName') + "<br><b>Address:</b> " + urlParams.get('address') + "<br><b>Opioid Sales:</b> $" + urlParams.get('opioidSales')+ "<br><b>Opioid Prescription Rate:</b> " + urlParams.get('opioidPrescibingRate') + "%";
+
+  doctorMarker.bindPopup(popupText)
+
+  map.setView([lat,lon],15);
+}
+
+
+
+$(window).load(function(){
+   // PAGE IS FULLY LOADED
+   // FADE OUT YOUR OVERLAYING DIV
+   $('#loading').fadeOut();
+
+
+});
 
 function pittOverdoses(){
   $.getJSON('assets/overdoseDeaths.json', function(json) {
@@ -71,14 +108,9 @@ function pittDoctors(){
           console.log(typeof(lat));
           console.log(typeof(lon));
 
-          var circle = L.circleMarker([lat,lon],
-            {
-              color: 'red',
-              fillColor: "#f03",
-              fillOpacity: 1.0,
-              radius: 25,
-            }).addTo(map);
-          console.log("added doctor");
+          var doctorMark = L.marker([lat,lon],
+            {icon: redCrossIcon, zIndexOffset:-999}).addTo(map);
+
         }
       }
     })
@@ -123,4 +155,19 @@ function resetMapView(){
   L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=' + mapboxAccessToken, {
       id: 'mapbox.light',
   }).addTo(map);
+}
+
+
+function showIndictedDoctors() {
+  $.getJSON('assets/indictedDoctors.json', function(json) {
+    for (var key in json){
+      if (json.hasOwnProperty(key)) {
+        curValue =  json[key];
+        var marker = L.marker([curValue['lat'],curValue['lon']], {icon: dojIcon}).addTo(map);
+
+        popupText = '<b>Doctor Name:</b> ' + curValue['doctorName'] + '<br><b>Additional Notes:</b> ' + curValue['sentence'];
+        marker.bindPopup(popupText);
+      }
+    }
+  });
 }
