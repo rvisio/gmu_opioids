@@ -55,7 +55,7 @@ def geocodeAddress(address):
 
 #
 # def queryDb(npi):
-#     conn = pymssql.connect(server="52.232.179.164", user="Mark", password="CoventGarden1", database="GMU_Opioids",
+#     conn = pymssql.connect(server="[redacted]", user="[redacted]", password="[redacted]", database="[redacted]",
 #                            port="666")
 #
 #     try:
